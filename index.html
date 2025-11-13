@@ -198,6 +198,7 @@
             margin-top: 30px;
             padding-top: 25px;
             border-top: 1px solid #eee;
+            flex-direction: row;
         }
         
         .feature {
@@ -244,8 +245,20 @@
             }
             
             .features {
-                flex-direction: column;
-                gap: 15px;
+                flex-direction: row; /* Keep horizontal on mobile */
+                gap: 5px; /* Reduced gap for mobile */
+            }
+            
+            .feature {
+                padding: 0 5px;
+            }
+            
+            .feature i {
+                font-size: 20px;
+            }
+            
+            .feature p {
+                font-size: 12px; /* Smaller text on mobile */
             }
         }
         
@@ -260,6 +273,14 @@
             
             .subtitle {
                 font-size: 14px;
+            }
+            
+            .features {
+                gap: 3px;
+            }
+            
+            .feature p {
+                font-size: 11px;
             }
         }
     </style>
